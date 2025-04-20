@@ -37,12 +37,12 @@ modules:
 #      - nvidia-driver-cuda
 #      - nvidia-driver-NvFBCOpenGL
       - uv
-      - scrcpy
-      - astroterm
+#      - scrcpy
+#      - astroterm
       - ghostty
       - sdrpp
       - zoxide
-      - keyd
+#      - keyd
       - kernel-tools
       - tailscale
       - bat
@@ -52,8 +52,8 @@ modules:
       - msr-tools
       - topgrade
       - powertop
-      - python3.11
-      - python3.12
+#      - python3.11
+#      - python3.12
       - adw-gtk3-theme
       - rapid-photo-downloader
       - rtl-sdr
