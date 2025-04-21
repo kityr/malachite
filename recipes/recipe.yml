@@ -48,7 +48,7 @@ modules:
       - tailscale
       - bat
       - eza
-      - fish
+#      - fish
       - zsh
       - msr-tools
       - topgrade
