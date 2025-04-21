@@ -28,7 +28,7 @@ modules:
 #     - https://negativo17.org/repos/fedora-nvidia.repo  # add Negativo17 NVIDIA/CUDA repo
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://copr.fedorainfracloud.org/coprs/zeno/scrcpy/repo/fedora-%OS_VERSION%/zeno-scrcpy-fedora-%OS_VERSION%.repo
-#      - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
 #     - https://repos.fyralabs.com/terra$OS_VERSION%
       - https://copr.fedorainfracloud.org/coprs/shdwchn10/AllTheTools/repo/fedora-%OS_VERSION%/shdwchn10-AllTheTools-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
@@ -40,7 +40,7 @@ modules:
       - uv
 #      - scrcpy
 #      - astroterm
-#      - ghostty
+      - ghostty
       - sdrpp
       - zoxide
 #      - keyd
@@ -48,7 +48,7 @@ modules:
       - tailscale
       - bat
       - eza
-      - fish
+#      - fish
       - zsh
       - msr-tools
       - topgrade
@@ -63,18 +63,6 @@ modules:
     remove: 
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
-  - type: script
-    snippets:
-      - |
-        echo "Removing ghostty terminfo to avoid conflict"
-        rm -f /usr/share/terminfo/g/ghostty
-
-  - type: rpm-ostree
-    repos: 
-      - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
-    install:
-      - ghostty
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
