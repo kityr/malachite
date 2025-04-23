@@ -33,6 +33,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/shdwchn10/AllTheTools/repo/fedora-%OS_VERSION%/shdwchn10-AllTheTools-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
     install:
+      - https://windscribe.com/install/desktop/linux_rpm_x64
 #      - cuda
 #      - nvenc
 #      - nvidia-driver-cuda
