@@ -25,45 +25,45 @@ modules:
 
   - type: dnf
     repos:
-        copr:
-          - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-          - https://copr.fedorainfracloud.org/coprs/zeno/scrcpy/repo/fedora-%OS_VERSION%/zeno-scrcpy-fedora-%OS_VERSION%.repo
-          - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
-          - https://copr.fedorainfracloud.org/coprs/shdwchn10/AllTheTools/repo/fedora-%OS_VERSION%/shdwchn10-AllTheTools-fedora-%OS_VERSION%.repo
-          - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
+      copr:
+        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+        - https://copr.fedorainfracloud.org/coprs/zeno/scrcpy/repo/fedora-%OS_VERSION%/zeno-scrcpy-fedora-%OS_VERSION%.repo
+        - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
+        - https://copr.fedorainfracloud.org/coprs/shdwchn10/AllTheTools/repo/fedora-%OS_VERSION%/shdwchn10-AllTheTools-fedora-%OS_VERSION%.repo
+        - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
     install:
-        packages:
+      packages:
     #      - cuda
     #      - nvenc
     #      - nvidia-driver-cuda
     #      - nvidia-driver-NvFBCOpenGL
-          - uv
+        - uv
     #      - scrcpy
     #      - astroterm
-          - ghostty
-          - sdrpp
-          - zoxide
+        - ghostty
+        - sdrpp
+        - zoxide
     #      - keyd
-          - kernel-tools
-          - tailscale
-          - bat
-          - eza
-    #      - fish
-          - zsh
-          - msr-tools
-          - topgrade
-          - powertop
-    #      - python3.11
-    #      - python3.12
-          - adw-gtk3-theme
-          - rapid-photo-downloader
-          - rtl-sdr
-          - gqrx
-          - sdrangel
+        - kernel-tools
+        - tailscale
+        - bat
+        - eza
+    #    - fish
+        - zsh
+        - msr-tools
+        - topgrade
+        - powertop
+    #    - python3.11
+    #    - python3.12
+        - adw-gtk3-theme
+        - rapid-photo-downloader
+        - rtl-sdr
+        - gqrx
+        - sdrangel
     remove: 
-        packages:
-          - firefox
-          - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      packages:
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
