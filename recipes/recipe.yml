@@ -11,14 +11,14 @@ image-version: latest  # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
- # - type: akmods
- #   base: main
- #   install:
- #     - nvidia
- # - type: files
- #   files:
- #     - source: system
- #       destination: / # copies files/system/* into root
+  # - type: akmods
+  #   base: main
+  #   install:
+  #     - nvidia
+  # - type: files
+  #   files:
+  #     - source: system
+  #       destination: / # copies files/system/* into root
   - type: dnf
     repos:
       copr:
@@ -29,28 +29,28 @@ modules:
         - https://copr.fedorainfracloud.org/coprs/alternateved/keyd/repo/fedora-%OS_VERSION%/alternateved-keyd-fedora-%OS_VERSION%.repo
     install:
       packages:
-    #      - cuda
-    #      - nvenc
-    #      - nvidia-driver-cuda
-    #      - nvidia-driver-NvFBCOpenGL
+        #- cuda
+        #- nvenc
+        #- nvidia-driver-cuda
+        #- nvidia-driver-NvFBCOpenGL
         - uv
-    #      - scrcpy
-    #      - astroterm
+        #- scrcpy
+        #- astroterm
         - ghostty
         - sdrpp
         - zoxide
-    #      - keyd
+        #- keyd
         - kernel-tools
         - tailscale
         - bat
         - eza
-    #    - fish
+        #- fish
         - zsh
         - msr-tools
         - topgrade
         - powertop
-    #    - python3.11
-    #    - python3.12
+        #- python3.11
+        #- python3.12
         - adw-gtk3-theme
         - rapid-photo-downloader
         - rtl-sdr
@@ -59,7 +59,7 @@ modules:
     remove:
       packages:
         - firefox
-        - firefox-langpacks 
+        - firefox-langpacks
   - type: default-flatpaks
     notify: true # Send notification after install
     system:
