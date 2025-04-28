@@ -6,23 +6,21 @@ name: malachite
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-#base-image: ghcr.io/ublue-os/silverblue-main
+# base-image: ghcr.io/ublue-os/silverblue-main
 base-image: ghcr.io/ublue-os/silverblue-nvidia
-image-version: latest # latest is also supported if you want new updates ASAP
+image-version: latest  # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-#  - type: akmods
-#    base: main
-#    install:
-#      - nvidia
-  
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
+ # - type: akmods
+ #   base: main
+ #   install:
+ #     - nvidia  
+ # - type: files
+ #   files:
+ #     - source: system
+ #       destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - type: dnf
     repos:
       copr:
