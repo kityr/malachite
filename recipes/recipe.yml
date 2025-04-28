@@ -23,7 +23,7 @@ modules:
     repos:
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-      copr: 
+      copr:
         - zeno/scrcpy
         - pgdev/ghostty
         - shdwchn10/AllTheTools
