@@ -21,8 +21,9 @@ modules:
   #       destination: / # copies files/system/* into root
   - type: dnf
     repos:
-      copr: 
+      files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      copr: 
         - https://copr.fedorainfracloud.org/coprs/zeno/scrcpy/repo/fedora-%OS_VERSION%/zeno-scrcpy-fedora-%OS_VERSION%.repo
         - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
         - https://copr.fedorainfracloud.org/coprs/shdwchn10/AllTheTools/repo/fedora-%OS_VERSION%/shdwchn10-AllTheTools-fedora-%OS_VERSION%.repo
