@@ -30,6 +30,7 @@ modules:
         - pgdev/ghostty
         - shdwchn10/AllTheTools
         - alternateved/keyd
+        - solopasha/hyprland
     install:
       packages:
         # - cuda
@@ -59,6 +60,49 @@ modules:
         - rtl-sdr
         - gqrx
         - sdrangel
+        # ************** HYPRLAND RELATED THINGS ******************
+        # Core compositors
+        - hyprland
+        - hyprland-git
+        - hyprland-legacyrenderer
+        # Plugins & extensions
+        - hyprland-plugins
+        - hyprland-plugins-git
+        - hyprland-contrib
+        - hyprland-autoname-workspaces
+        - hyprland-polkitagent
+        # Session helpers & portals
+        - xdg-desktop-portal-hyprland
+        - gnome-keyring
+        # Wallpapers & lockscreen
+        - hyprpaper
+        - swww
+        - waypaper
+        - hyprlock
+        - mpvpaper
+        - hyprsunset
+        # Panels, widgets & bars
+        - hyprpanel
+        - waybar-git
+        - eww-git
+        - aylurs-gtk-shell
+        - aylurs-gtk-shell2
+        # Utilities
+        - hypridle
+        - hyprshot
+        - hyprpicker
+        - hyprsysteminfo
+        - hyprdim
+        - satty
+        - cliphist
+        - nwg-clipman
+        - swaylock-effects
+        - pyprland
+        - uwsm
+        # Essentials
+        - dunst
+        - alacritty
+        - pavucontrol
     remove:
       packages:
         - firefox
