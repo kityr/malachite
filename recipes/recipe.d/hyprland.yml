@@ -4,59 +4,59 @@
 # a full-featured Wayland compositor setup on Silverblue.
 
 modules:
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - >
-        https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/
-        repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+      copr:
+        - solopasha/hyprland
     install:
-      # Core compositors
-      - hyprland
-      - hyprland-git
-      - hyprland-legacyrenderer
+      packages:
+        # Core compositors
+        - hyprland
+        - hyprland-git
+        - hyprland-legacyrenderer
 
-      # Plugins & extensions
-      - hyprland-plugins
-      - hyprland-plugins-git
-      - hyprland-contrib
-      - hyprland-autoname-workspaces
-      - hyprland-polkitagent
+        # Plugins & extensions
+        - hyprland-plugins
+        - hyprland-plugins-git
+        - hyprland-contrib
+        - hyprland-autoname-workspaces
+        - hyprland-polkitagent
 
-      # Session helpers & portals
-      - xdg-desktop-portal-hyprland
-      - gnome-keyring
+        # Session helpers & portals
+        - xdg-desktop-portal-hyprland
+        - gnome-keyring
 
-      # Wallpapers & lockscreen
-      - hyprpaper
-      - swww
-      - waypaper
-      - hyprlock
-      - mpvpaper
-      - hyprsunset
+        # Wallpapers & lockscreen
+        - hyprpaper
+        - swww
+        - waypaper
+        - hyprlock
+        - mpvpaper
+        - hyprsunset
 
-      # Panels, widgets & bars
-      - hyprpanel
-      - waybar-git
-      - eww-git
-      - aylurs-gtk-shell
-      - aylurs-gtk-shell2
+        # Panels, widgets & bars
+        - hyprpanel
+        - waybar-git
+        - eww-git
+        - aylurs-gtk-shell
+        - aylurs-gtk-shell2
 
-      # Utilities
-      - hypridle
-      - hyprshot
-      - hyprpicker
-      - hyprsysteminfo
-      - hyprdim
-      - satty
-      - cliphist
-      - nwg-clipman
-      - swaylock-effects
-      - pyprland
-      - uwsm
+        # Utilities
+        - hypridle
+        - hyprshot
+        - hyprpicker
+        - hyprsysteminfo
+        - hyprdim
+        - satty
+        - cliphist
+        - nwg-clipman
+        - swaylock-effects
+        - pyprland
+        - uwsm
 
-      # Essentials
-      - dunst
-      - alacritty
-      - pavucontrol
+        # Essentials
+        - dunst
+        - alacritty
+        - pavucontrol
 
-    # Note: GNOME remains intact so both sessions coexist.
+      # Note: GNOME remains intact so both sessions coexist.
