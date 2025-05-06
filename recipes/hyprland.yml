@@ -1,0 +1,44 @@
+# recipes/hyprland.yml
+
+type: dnf
+  repos:
+    copr:
+      - solopasha/hyprland
+  install:
+    packages:
+
+      # ── Compositor & core ───────────────────────────────────────────────
+      - hyprland                       # stable Hyprland Wayland compositor
+      - hyprland-plugins               # official plugin suite for stable Hyprland
+
+      # ── Session helpers & auth ────────────────────────────────────────
+      - xdg-desktop-portal-hyprland    # portal backend for file dialogs, screenshots
+      - hyprpolkitagent                # Polkit auth agent integration
+      - gnome-keyring                  # secret storage (for portals, network login)
+
+      # ── Window management extras ───────────────────────────────────────
+      - hyprland-autoname-workspaces   # auto‑renames workspaces based on apps
+      - hyprdim                        # dim inactive windows for focus indication
+
+      # ── Lockscreen & idle ─────────────────────────────────────────────
+      - hyprlock                       # GPU‑accelerated screen locker
+      - hypridle                       # idle daemon (e.g. DPMS, screen blanking)
+
+      # ── Wallpaper tool ─────────────────────────────────────────────────
+      - hyprpaper                      # IPC‑controlled wallpaper daemon
+
+      # ── Panel & status bar ────────────────────────────────────────────
+      - hyprpanel                      # customizable Hyprland panel/bar
+
+      # ── Notifications & clipboard ─────────────────────────────────────
+      - dunst                          # lightweight notification daemon
+      - cliphist                       # Wayland clipboard manager
+      - nwg-clipman                    # GTK3 GUI for cliphist
+
+      # ── Utilities ─────────────────────────────────────────────────────
+      - hyprshot                       # screenshot utility with mouse selection
+      - hyprpicker                     # Wayland color picker tool
+      - hyprsysteminfo                 # system info display for overlays/status
+
+      # ── Essentials ────────────────────────────────────────────────────
+      - pavucontrol                    # graphical PulseAudio volume control
