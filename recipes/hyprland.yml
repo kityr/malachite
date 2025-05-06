@@ -41,7 +41,6 @@ install:
     - hyprsysteminfo                 # system info display for overlays/status
     - hyprnome                       # gnome like workspace switching
     - hyprsunset                     # blue light filter
-    - 
 
     # ── Essentials ────────────────────────────────────────────────────
     - pavucontrol                    # graphical PulseAudio volume control
