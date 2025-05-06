@@ -63,6 +63,7 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+  #- from-file: hyprland.yml
   - type: default-flatpaks
     notify: true  # Send notification after install
     system:
