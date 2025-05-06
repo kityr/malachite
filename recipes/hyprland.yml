@@ -39,6 +39,7 @@ install:
     - hyprshot                       # screenshot utility with mouse selection
     - hyprpicker                     # Wayland color picker tool
     - hyprsysteminfo                 # system info display for overlays/status
+    - hyprnome                       # gnome like workspace switching
 
     # ── Essentials ────────────────────────────────────────────────────
     - pavucontrol                    # graphical PulseAudio volume control
