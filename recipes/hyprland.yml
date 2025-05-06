@@ -14,7 +14,7 @@ install:
     # ── Session helpers & auth ────────────────────────────────────────
     - xdg-desktop-portal-hyprland    # portal backend for file dialogs, screenshots
     - hyprpolkitagent                # Polkit auth agent integration
-    - gnome-keyring                  # secret storage (for portals, network login)
+    # - gnome-keyring                  # secret storage (for portals, network login)
 
     # ── Window management extras ───────────────────────────────────────
     - hyprland-autoname-workspaces   # auto‑renames workspaces based on apps
