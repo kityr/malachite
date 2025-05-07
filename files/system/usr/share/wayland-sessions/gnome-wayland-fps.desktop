@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GNOME on Wayland (fps)
+Comment=Debug version of gnome, displaying fps
+Exec=/usr/bin/env CLUTTER_SHOW_FPS=1 /usr/bin/gnome-session
+Type=Application
+DesktopNames=GNOME
+X-GDM-SessionRegisters=true
