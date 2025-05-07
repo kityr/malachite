@@ -30,7 +30,8 @@ modules:
         - alternateved/keyd
     install:
       packages:
-        - intel-gpu-tools
+        - vkmark
+        - vulkan-tools
         # - cuda
         # - nvenc
         # - nvidia-driver-cuda
