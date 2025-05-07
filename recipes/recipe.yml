@@ -15,10 +15,10 @@ modules:
   #   base: main
   #   install:
   #     - nvidia
-  # - type: files
-  #   files:
-  #     - source: system
-  #       destination: / # copies files/system/* into root
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* into root
   - type: dnf
     repos:
       files:
@@ -30,6 +30,7 @@ modules:
         - alternateved/keyd
     install:
       packages:
+        - intel-gpu-tools
         # - cuda
         # - nvenc
         # - nvidia-driver-cuda
