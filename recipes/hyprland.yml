@@ -28,8 +28,9 @@ install:
     - hyprpaper                      # IPC‑controlled wallpaper daemon
 
     # ── Panel & status bar ────────────────────────────────────────────
-    - hyprpanel                      # customizable Hyprland panel/bar
-
+    # - hyprpanel                      # customizable Hyprland panel/bar
+    - waybar
+    
     # ── Notifications & clipboard ─────────────────────────────────────
     - dunst                          # lightweight notification daemon
     - cliphist                       # Wayland clipboard manager
