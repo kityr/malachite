@@ -30,6 +30,10 @@ modules:
         - alternateved/keyd
     install:
       packages:
+        - cmake
+        - meson
+        - gcc-c++
+        - gcc
         - igt-gpu-tools
         - vkmark
         - vulkan-tools
