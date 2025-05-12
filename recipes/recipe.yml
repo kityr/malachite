@@ -28,8 +28,13 @@ modules:
         - pgdev/ghostty
         - shdwchn10/AllTheTools
         - alternateved/keyd
+        - lihaohong/yazi
     install:
       packages:
+        - poppler
+        - fd-find
+        - yazi
+        # ********************************************
         - cmake
         - meson
         - gcc-c++
