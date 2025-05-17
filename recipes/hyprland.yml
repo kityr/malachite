@@ -6,7 +6,8 @@ repos:
     - solopasha/hyprland
 install:
   packages:
-
+    - rofi-wayland
+    - fuzzel
     # ── Compositor & core ───────────────────────────────────────────────
     - hyprland                       # stable Hyprland Wayland compositor
     - hyprland-plugins               # official plugin suite for stable Hyprland
