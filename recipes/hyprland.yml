@@ -6,6 +6,9 @@ repos:
     - solopasha/hyprland
 install:
   packages:
+    - udis86
+    - mesa-libGL-devel
+    - mesa-libGLES-devel
     - rofi-wayland
     - fuzzel
     # ── Compositor & core ───────────────────────────────────────────────
