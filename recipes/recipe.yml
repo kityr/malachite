@@ -88,3 +88,7 @@ modules:
         - org.gnome.eog
     user: {}  # Also add Flathub user repo, but no user packages
   - type: signing  # this sets up the proper policy & signing
+
+  - type: brew
+    nofile-limits: true # increase nofile limits
+    brew-analytics: false # disable telemetry
