@@ -32,6 +32,7 @@ modules:
         #- bieszczaders/kernel-cachyos
     install:
       packages:
+        - libssl-dev
         #- kernel-cachyos
         - hashcat
         - stress
