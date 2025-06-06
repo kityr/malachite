@@ -29,10 +29,10 @@ modules:
         - shdwchn10/AllTheTools
         - alternateved/keyd
         - lihaohong/yazi
-        - bieszczaders/kernel-cachyos
+        #- bieszczaders/kernel-cachyos
     install:
       packages:
-        - kernel-cachyos
+        #- kernel-cachyos
         - hashcat
         - stress
         - cargo
