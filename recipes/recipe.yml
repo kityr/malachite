@@ -32,6 +32,8 @@ modules:
         #- bieszczaders/kernel-cachyos
     install:
       packages:
+        - thinkfan
+        - lm_sensors
         #- libssl-dev
         #- kernel-cachyos
         - hashcat
