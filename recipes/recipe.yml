@@ -24,7 +24,7 @@ modules:
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       copr:
-        - amneziavpn/amneziawg
+        #- amneziavpn/amneziawg
         - zeno/scrcpy
         - pgdev/ghostty
         - shdwchn10/AllTheTools
@@ -33,8 +33,8 @@ modules:
         #- bieszczaders/kernel-cachyos
     install:
       packages:
-        - amneziawg-dkms 
-        - amneziawg-tools
+        #- amneziawg-dkms 
+        #- amneziawg-tools
         - openssl-devel
         - thinkfan
         - lm_sensors
