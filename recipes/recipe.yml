@@ -31,6 +31,8 @@ modules:
         - alternateved/keyd
         - lihaohong/yazi
         #- bieszczaders/kernel-cachyos
+    optfix:
+      - windscribe
     install:
       packages:
         - https://github.com/Windscribe/Desktop-App/releases/download/v2.16.4/windscribe_2.16.4_guinea_pig_amd64_fedora.rpm
