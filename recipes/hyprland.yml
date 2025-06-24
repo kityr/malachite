@@ -4,8 +4,10 @@ type: dnf
 repos:
   copr:
     - solopasha/hyprland
+    - errornointernet/quickshell
 install:
   packages:
+    - quickshell
     - udis86
     - mesa-libGL-devel
     - mesa-libGLES-devel
