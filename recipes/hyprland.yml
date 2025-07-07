@@ -5,6 +5,8 @@ repos:
   copr:
     - solopasha/hyprland
     - errornointernet/quickshell
+    - atim/starship
+    - deltacopy/darkly 
 install:
   packages:
     - quickshell
