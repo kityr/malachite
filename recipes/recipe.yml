@@ -36,7 +36,7 @@ modules:
     install:
       packages:
         - libinput-utils
-        - https://github.com/Windscribe/Desktop-App/releases/download/v2.16.11/windscribe_2.16.11_amd64.deb
+        - https://github.com/Windscribe/Desktop-App/releases/download/v2.16.11/windscribe_2.16.11_amd64_fedora.rpm
         #- https://github.com/Windscribe/Desktop-App/releases/download/v2.16.4/windscribe_2.16.4_guinea_pig_amd64_fedora.rpm
         #- amneziawg-dkms 
         #- amneziawg-tools
