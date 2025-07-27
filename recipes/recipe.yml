@@ -106,7 +106,7 @@ modules:
   #       - org.gnome.Loupe
   #     remove:
   #       - org.gnome.eog
-    user: {}  # Also add Flathub user repo, but no user packages
+  #  user: {}  # Also add Flathub user repo, but no user packages
   - type: signing  # this sets up the proper policy & signing
 
   - type: brew
