@@ -35,6 +35,7 @@ modules:
       - windscribe
     install:
       packages:
+        - llama-cpp
         - nnn
         - dmtcp
         - libinput-utils
