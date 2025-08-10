@@ -23,7 +23,7 @@ modules:
     repos:
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-        - https://developer.download.nvidia.com/compute/cuda/repos/fedora42/x86_64/cuda-fedora42.repo
+        #- https://developer.download.nvidia.com/compute/cuda/repos/fedora42/x86_64/cuda-fedora42.repo
       copr:
         #- amneziavpn/amneziawg
         - zeno/scrcpy
@@ -36,7 +36,7 @@ modules:
       - windscribe
     install:
       packages:
-        - cuda-toolkit-13-0
+        #- cuda-toolkit-13-0
         - nnn
         - dmtcp
         - libinput-utils
