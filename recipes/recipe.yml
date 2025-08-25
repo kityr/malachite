@@ -36,6 +36,7 @@ modules:
       - windscribe
     install:
       packages:
+        - mpv
         #- cuda-toolkit-13-0
         - nnn
         - dmtcp
