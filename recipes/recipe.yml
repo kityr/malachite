@@ -27,7 +27,7 @@ modules:
       copr:
         #- amneziavpn/amneziawg
         - zeno/scrcpy
-        - pgdev/ghostty
+        - scottames/ghostty
         - shdwchn10/AllTheTools
         - alternateved/keyd
         - lihaohong/yazi
