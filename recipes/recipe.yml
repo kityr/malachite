@@ -36,6 +36,7 @@ modules:
       - windscribe
     install:
       packages:
+        - distrobox
         - policycoreutils-python-utils
         - mpv
         #- cuda-toolkit-13-0
