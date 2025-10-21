@@ -34,6 +34,8 @@ modules:
       - windscribe
     install:
       packages:
+        - https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
+      
         - podman-remote
         - podman-docker
         
