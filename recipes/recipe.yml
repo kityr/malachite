@@ -82,7 +82,7 @@ modules:
         - firefox
         - firefox-langpacks
   # - from-file: hyprland.yml
-  # - type: script
+  - type: script
     snippets:
       - "rm /usr/share/backgrounds/gnome/*"
   # - type: default-flatpaks
