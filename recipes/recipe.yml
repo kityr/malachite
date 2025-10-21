@@ -11,7 +11,6 @@ image-version: latest  # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  # Add NVIDIA support (auto-detected at boot, safe on AMD)
   - type: akmods
     install: []
     nvidia-driver: nvidia
@@ -24,9 +23,7 @@ modules:
     repos:
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-        #- https://developer.download.nvidia.com/compute/cuda/repos/fedora42/x86_64/cuda-fedora42.repo
       copr:
-        #- amneziavpn/amneziawg
         - zeno/scrcpy
         - scottames/ghostty
         - shdwchn10/AllTheTools
@@ -37,28 +34,19 @@ modules:
       - windscribe
     install:
       packages:
-        #- xorg-x11-drv-nvidia-cuda
-        #- xorg-x11-drv-nvidia-cuda-libs
-        
         - podman-remote
         - podman-docker
         
-        # - distrobox
+        - distrobox
+        
         - policycoreutils-python-utils
         - mpv
-        #- cuda-toolkit-13-0
         - nnn
         - dmtcp
         - libinput-utils
-        #- https://github.com/Windscribe/Desktop-App/releases/download/v2.16.14/windscribe_2.16.14_amd64_fedora.rpm
-        #- https://github.com/Windscribe/Desktop-App/releases/download/v2.16.4/windscribe_2.16.4_guinea_pig_amd64_fedora.rpm
-        #- amneziawg-dkms 
-        #- amneziawg-tools
         - openssl-devel
         - thinkfan
         - lm_sensors
-        #- libssl-dev
-        #- kernel-cachyos
         - hashcat
         - stress
         - cargo
@@ -73,28 +61,18 @@ modules:
         - igt-gpu-tools
         - vkmark
         - vulkan-tools
-        # - cuda
-        # - nvenc
-        # - nvidia-driver-cuda
-        # - nvidia-driver-NvFBCOpenGL
         - uv
-        # - scrcpy
-        # - astroterm
         - ghostty
         - sdrpp
         - zoxide
-        # - keyd
         - kernel-tools
         - tailscale
         - bat
         - eza
-        # - fish
         - zsh
         - msr-tools
         - topgrade
         - powertop
-        # - python3.11
-        # - python3.12
         - adw-gtk3-theme
         - rapid-photo-downloader
         - rtl-sdr
