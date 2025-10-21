@@ -83,9 +83,8 @@ modules:
         - firefox-langpacks
   # - from-file: hyprland.yml
   # - type: script
-  #   snippets:
-  #     - "rm /usr/share/backgrounds/gnome/pride*"
-  #     - "rm /usr/share/backgrounds/gnome/progress*"
+    snippets:
+      - "rm /usr/share/backgrounds/gnome/*"
   # - type: default-flatpaks
   #   notify: true  # Send notification after install
   #   system:
