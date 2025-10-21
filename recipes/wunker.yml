@@ -1,20 +1,20 @@
-  - type: dnf
-    repos:
-      cleanup: true
-      nonfree: negativo17
-      copr: []
-    install:
-      packages:
-        - fedora-repos-archive
-        - zstd
-        - sbsign
-        - alsa-firmware
-        - android-udev-rules
-        - apr
-        - apr-util
-        - distrobox
-        - fdk-aac
-        - ffmpeg
+type: dnf
+repos:
+  cleanup: true
+  nonfree: negativo17
+  copr: []
+install:
+  packages:
+    - fedora-repos-archive
+    - zstd
+    - sbsign
+    - alsa-firmware
+    - android-udev-rules
+    - apr
+    - apr-util
+    - distrobox
+    - fdk-aac
+    - ffmpeg
         - ffmpeg-libs
         - ffmpegthumbnailer
         - flatpak-spawn
