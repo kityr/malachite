@@ -11,10 +11,11 @@ image-version: latest  # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  # - type: akmods
-  #   base: main
-  #   install:
-  #     - nvidia
+  # Add NVIDIA support (auto-detected at boot, safe on AMD)
+  - type: akmods
+    install: []
+    nvidia-driver: nvidia
+    
   - type: files
     files:
       - source: system
@@ -36,9 +37,13 @@ modules:
       - windscribe
     install:
       packages:
+        - xorg-x11-drv-nvidia-cuda
+        - xorg-x11-drv-nvidia-cuda-libs
+        
         - podman-remote
         - podman-docker
-        - distrobox
+        
+        # - distrobox
         - policycoreutils-python-utils
         - mpv
         #- cuda-toolkit-13-0
