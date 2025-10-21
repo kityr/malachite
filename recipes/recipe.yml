@@ -39,7 +39,7 @@ modules:
         - podman-remote
         - podman-docker
         
-        - distrobox
+        #- distrobox
         
         - policycoreutils-python-utils
         - mpv
