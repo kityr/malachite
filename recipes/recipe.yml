@@ -37,8 +37,8 @@ modules:
       - windscribe
     install:
       packages:
-        - xorg-x11-drv-nvidia-cuda
-        - xorg-x11-drv-nvidia-cuda-libs
+        #- xorg-x11-drv-nvidia-cuda
+        #- xorg-x11-drv-nvidia-cuda-libs
         
         - podman-remote
         - podman-docker
