@@ -36,6 +36,8 @@ modules:
       - windscribe
     install:
       packages:
+        - podman-remote
+        - podman-docker
         - distrobox
         - policycoreutils-python-utils
         - mpv
