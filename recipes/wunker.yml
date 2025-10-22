@@ -2,7 +2,9 @@ type: dnf
 repos:
   cleanup: true
   nonfree: negativo17
-  copr: []
+  copr: 
+    - ublue-os/packages
+    - ublue-os/staging
 install:
   packages:
     - fedora-repos-archive
