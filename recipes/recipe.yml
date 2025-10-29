@@ -75,7 +75,7 @@ modules:
         - topgrade
         - powertop
         - adw-gtk3-theme
-        - rapid-photo-downloader
+        # - rapid-photo-downloader
         - rtl-sdr
         - gqrx
         - sdrangel
