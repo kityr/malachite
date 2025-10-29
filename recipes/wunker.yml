@@ -42,7 +42,6 @@ install:
     - libratbag-ratbagd
     - libva-utils
     - lshw
-    - mesa-libxatracker
     - net-tools
     - nvme-cli
     - nvtop
