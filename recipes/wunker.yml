@@ -7,6 +7,7 @@ repos:
     - ublue-os/staging
 install:
   packages:
+    - fish
     - fedora-repos-archive
     - zstd
     - sbsign
