@@ -91,4 +91,4 @@ replace:
       - mesa-libGL
       - mesa-libgbm
       - mesa-va-drivers
-      - mesa-vulkan-drivers.x86_64
+      #- mesa-vulkan-drivers
