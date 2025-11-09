@@ -79,16 +79,16 @@ replace:
         old: OpenCL-ICD-Loader
 
   # use override to replace mesa and others with less crippled versions
-  # - from-repo: fedora-multimedia
-  #   install-weak-deps: false
-  #   packages:
-  #     - libva
-  #     - intel-vpl-gpu-rt
-  #     - intel-mediasdk
-  #     - mesa-dri-drivers
-  #     - mesa-filesystem
-  #     - mesa-libEGL
-  #     - mesa-libGL
-  #     - mesa-libgbm
-  #     - mesa-va-drivers
-  #     - mesa-vulkan-drivers
+  - from-repo: fedora-multimedia
+    install-weak-deps: false
+    packages:
+      - libva
+      - intel-vpl-gpu-rt
+      - intel-mediasdk
+      - mesa-dri-drivers
+      - mesa-filesystem
+      - mesa-libEGL
+      - mesa-libGL
+      - mesa-libgbm
+      - mesa-va-drivers
+      - mesa-vulkan-drivers
