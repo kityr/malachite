@@ -34,6 +34,8 @@ modules:
       - windscribe
     install:
       packages:
+        - gnome-tweaks
+        
         - fish
         
         - https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
