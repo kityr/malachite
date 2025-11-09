@@ -90,9 +90,9 @@ modules:
         - firefox-langpacks
   # - from-file: hyprland.yml
   # - from-file: wunker.yml
-  - type: script
-    snippets:
-      - "rm /usr/share/backgrounds/gnome/*"
+  # - type: script
+  #   snippets:
+  #     - "rm /usr/share/backgrounds/gnome/*"
   # - type: default-flatpaks
   #   notify: true  # Send notification after install
   #   system:
