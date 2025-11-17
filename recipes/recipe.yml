@@ -80,7 +80,9 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
-
+  - type: script
+    snippets:
+      - "rm /usr/share/backgrounds/gnome/progress*"
   - type: signing
   #   nofile-limits: true # increase nofile limits
   #   brew-analytics: false # disable telemetry
