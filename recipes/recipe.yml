@@ -21,6 +21,7 @@ modules:
     repos:
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
       copr:
         - zeno/scrcpy
         - scottames/ghostty
@@ -28,10 +29,10 @@ modules:
         - alternateved/keyd
         - lihaohong/yazi
         - bieszczaders/kernel-cachyos
-    optfix:
-      - windscribe
     install:
       packages:
+        - zed-preview
+      
         - gnome-tweaks
         - fish        
         - https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
