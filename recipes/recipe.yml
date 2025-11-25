@@ -32,7 +32,7 @@ modules:
     install:
       packages:
         - zed-preview
-      
+        - libxcrypt-compat
         - gnome-tweaks
         - fish        
         - https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
