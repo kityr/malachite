@@ -31,8 +31,8 @@ modules:
         - bieszczaders/kernel-cachyos
     install:
       packages:
-        - openmw
-        - openmw-tools
+        # - openmw
+        # - openmw-tools
         - zed-preview
         - libxcrypt-compat
         - gnome-tweaks
