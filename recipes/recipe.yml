@@ -31,6 +31,8 @@ modules:
         - bieszczaders/kernel-cachyos
     install:
       packages:
+        - npm
+        - npx
         - nvtop
         # - openmw
         # - openmw-tools
