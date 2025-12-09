@@ -5,13 +5,13 @@ name: malachite
 
 description: This is my personal OS image.
 
-base-image: quay.io/fedora-ostree-desktops/silverblue
+base-image: ghcr.io/blue-build/base-images/fedora-silverblue-nvidia
 image-version: 43  
 
 modules:
-  - type: akmods
-    install: []
-    nvidia-driver: nvidia
+  # - type: akmods
+  #   install: []
+  #   nvidia-driver: nvidia
     
   - type: files
     files:
