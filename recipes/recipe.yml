@@ -86,6 +86,8 @@ modules:
         - sdrangel
     remove:
       packages:
+        - gnome-software
+        - gnome-tour
         - firefox
         - firefox-langpacks
   - type: script
