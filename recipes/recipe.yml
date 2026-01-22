@@ -39,7 +39,7 @@ modules:
         - nvtop
         # - openmw
         # - openmw-tools
-        - zed-preview
+        # - zed-preview
         - libxcrypt-compat
         - gnome-tweaks
         - fish        
