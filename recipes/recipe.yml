@@ -31,7 +31,6 @@ modules:
         - bieszczaders/kernel-cachyos
     install:
       packages:
-        - nodejs
         - https://github.com/hiddify/hiddify-app/releases/download/v2.5.7/Hiddify-rpm-x64.rpm
         - memtest86+
         - tbtools
