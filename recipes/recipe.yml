@@ -31,7 +31,7 @@ modules:
         - bieszczaders/kernel-cachyos
     install:
       packages:
-        - llvm
+        - clang
         - fontconfig-devel
         - nodejs
         - btop
