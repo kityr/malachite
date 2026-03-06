@@ -31,6 +31,9 @@ modules:
         - bieszczaders/kernel-cachyos
     install:
       packages:
+        - intel-level-zero
+        - intel-opencl
+        - intel-ocloc
         - intel-compute-runtime
         - clang
         - fontconfig-devel
