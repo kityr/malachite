@@ -31,6 +31,8 @@ modules:
         - bieszczaders/kernel-cachyos
     install:
       packages:
+        - qemu-kvm
+        - libvirt-daemon-kvm
         - intel-level-zero
         - intel-opencl
         - intel-ocloc
