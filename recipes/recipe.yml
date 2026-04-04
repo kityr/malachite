@@ -31,6 +31,7 @@ modules:
         - bieszczaders/kernel-cachyos
     install:
       packages:
+        - perl-Image-ExifTool
         - flatpak-builder
         - qemu-kvm
         - libvirt-daemon-kvm
