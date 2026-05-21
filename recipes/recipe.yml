@@ -28,9 +28,11 @@ modules:
         - shdwchn10/AllTheTools
         - alternateved/keyd
         - lihaohong/yazi
+        - sneexy/zen-browser
         # - bieszczaders/kernel-cachyos
     install:
       packages:
+        - zen-twilight
         - mpich
         - calibre
         - darktable
