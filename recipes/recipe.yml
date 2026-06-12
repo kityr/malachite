@@ -29,11 +29,12 @@ modules:
         - alternateved/keyd
         - lihaohong/yazi
         - sneexy/zen-browser
-        - principis/howdy
+        - ronnypfannschmidt/howdy-beta
         # - bieszczaders/kernel-cachyos
     install:
       packages:
         - howdy
+        - howdy-gtk
         - zen-twilight
         - mpich
         - calibre
