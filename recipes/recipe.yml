@@ -33,6 +33,7 @@ modules:
         # - bieszczaders/kernel-cachyos
     install:
       packages:
+        - libreoffice
         - howdy
         - howdy-gtk
         - zen-twilight
