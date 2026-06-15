@@ -30,9 +30,11 @@ modules:
         - lihaohong/yazi
         - sneexy/zen-browser
         - ronnypfannschmidt/howdy-beta
+        - imput/helium
         # - bieszczaders/kernel-cachyos
     install:
       packages:
+        - helium-bin
         - libreoffice
         - howdy
         - howdy-gtk
