@@ -83,7 +83,6 @@ modules:
         - lm_sensors
         - hashcat
         - stress
-        - cargo
         - poppler
         - fd-find
         - yazi
