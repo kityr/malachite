@@ -38,12 +38,12 @@ modules:
         - llvm # for macos-kvm reims-vgpu
         - git-lfs
         - helium-bin
-        - libreoffice
-        - howdy
-        - howdy-gtk
+        # - libreoffice
+        # - howdy
+        # - howdy-gtk
         - zen-twilight
         - mpich
-        - calibre
+        # - calibre
         - darktable
         - qemu-kvm
         - libvirt-daemon-kvm
@@ -58,14 +58,7 @@ modules:
         - https://github.com/hiddify/hiddify-app/releases/download/v2.5.7/Hiddify-rpm-x64.rpm
         - memtest86+
         - tbtools
-        #- https://github.com/oscar370/Matuda/releases/download/v1.0.1/Matuda-1.0.0-1.x86_64.rpm
-        #- btop
-        #- npm
-        #- npx
         - nvtop
-        # - openmw
-        # - openmw-tools
-        # - zed-preview
         - libxcrypt-compat
         - gnome-tweaks
         - fish        
