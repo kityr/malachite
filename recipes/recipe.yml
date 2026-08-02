@@ -34,6 +34,7 @@ modules:
         # - bieszczaders/kernel-cachyos
     install:
       packages:
+        - spirv-tools # for reims-vgpu
         - llvm # for macos-kvm reims-vgpu
         - git-lfs
         - helium-bin
