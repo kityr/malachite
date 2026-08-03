@@ -34,8 +34,6 @@ modules:
         # - bieszczaders/kernel-cachyos
     install:
       packages:
-        - gtk3-devel 
-        - libepoxy-devel
         - spirv-tools # for reims-vgpu
         - llvm # for macos-kvm reims-vgpu
         - git-lfs
