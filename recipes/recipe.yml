@@ -34,6 +34,7 @@ modules:
         # - bieszczaders/kernel-cachyos
     install:
       packages:
+        - https://github.com/Equicord/Equibop/releases/download/v3.2.2/equibop-3.2.2.x86_64.rpm
         - spirv-tools # for reims-vgpu
         - llvm # for macos-kvm reims-vgpu
         - git-lfs
