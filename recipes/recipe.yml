@@ -33,9 +33,21 @@ modules:
         - sneexy/zen-browser
         - ronnypfannschmidt/howdy-beta
         - imput/helium
+        - lionheartp/Hyprland
         # - bieszczaders/kernel-cachyos
     install:
       packages:
+        # HYPRLAND THINGS
+        - hyprland
+        - xdg-desktop-portal-hyprland
+        - hyprpolkitagent
+        - uwsm
+        - hyprpaper
+        - hyprlock
+        - hypridle
+        - hyprsunset
+        - noctalia-hyprland-meta
+        # ---------------------------------
         - clash-meta
         # - sing-box
         # - throne
