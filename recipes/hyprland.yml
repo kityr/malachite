@@ -82,3 +82,4 @@ modules:
     destination: /usr/lib64/hyprland/plugins
     plugins:
       - url: https://github.com/hyprnux/hyprglass
+      - url: https://github.com/fedsfarm/gloview
