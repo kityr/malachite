@@ -38,6 +38,55 @@ modules:
     install:
       packages:
         # HYPRLAND THINGS
+        # Hyprland headers and subsystem development packages
+        - hyprland-devel
+        - aquamarine-devel
+        - hyprutils-devel
+        - hyprlang-devel
+        - hyprcursor-devel
+        - hyprgraphics-devel
+        - hyprwire-devel
+        - hyprland-protocols-devel
+        
+        # Graphics / EGL / GLES3 & Shaders (required for hyprpm / plugin compilation)
+        - libglvnd-devel
+        - mesa-libEGL-devel
+        - mesa-libGL-devel
+        - mesa-libgbm-devel
+        - glslang-devel
+        
+        # Wayland, Input, & Window Management
+        - wayland-devel
+        - wayland-protocols-devel
+        - libxkbcommon-devel
+        - libinput-devel
+        - libdrm-devel
+        - pixman-devel
+        - cairo-devel
+        - pango-devel
+        - libXcursor-devel
+        - libxcb-devel
+        - xcb-util-devel
+        - xcb-util-wm-devel
+        - xcb-util-renderutil-devel
+        - xcb-util-errors-devel
+        - libseat-devel
+        - libdisplay-info-devel
+        - libliftoff-devel
+        - libeis-devel
+        
+        # Math, parsing, and utilities
+        - re2-devel
+        - muParser-devel
+        - lcms2-devel
+        - libuuid-devel
+        - tomlplusplus-devel
+        - glaze-devel
+        - sdbus-cpp-devel
+        - lua-devel
+        
+        # Build tools
+        - cpio
         - hyprland
         - xdg-desktop-portal-hyprland
         - hyprpolkitagent
