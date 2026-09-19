@@ -1,0 +1,12 @@
+name: hyprland-plugins
+shortdesc: Build and install Hyprland plugins into /usr/lib64/hyprland/plugins at image build time.
+example: |
+  type: hyprland-plugins
+  destination: /usr/lib64/hyprland/plugins # Optional, default: /usr/lib64/hyprland/plugins
+  plugins:
+    - url: https://github.com/hyprnux/hyprglass
+    # Optional advanced format:
+    # - url: https://github.com/hyprwm/hyprland-plugins
+    #   ref: v0.56.2
+    #   subdir: hyprbars
+    #   build: make all

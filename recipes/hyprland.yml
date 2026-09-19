@@ -1,144 +1,84 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-stage-list-v1.json
 # recipes/hyprland.yml
+# Sub-recipe containing Hyprland compositor, utilities, libraries, and plugins
 
-type: dnf
-repos:
-  copr:
-    - solopasha/hyprland
-    - errornointernet/quickshell
-    - atim/starship
-    - deltacopy/darkly 
-install:
-  packages:
-    # - clang
-    # - python3-devel
-    # - python3.12-devel
-    # - unzip
-    # - libsoup-devel
-    # - hyprland-qtutils
-    # - hyprutils
-    # - hyprwayland-scanner
-    # - wlogout
-    # - pugixml
-    # - hyprlang-devel
-    # - cliphist
-    # - gtk4-devel
-    # - libadwaita-devel
-    # - gtk-layer-shell-devel 
-    # - gtk3 
-    # - gtksourceview3 
-    # - gtksourceview3-devel 
-    # - gobject-introspection 
-    # - upower
-    # - gtksourceviewmm3-devel
-    # - webp-pixbuf-loader
-    # - gobject-introspection-devel 
-    # - gjs-devel 
-    # - pulseaudio-libs-devel
-    # - xrandr 
-    # - xdg-desktop-portal 
-    # - xdg-desktop-portal-kde
-    # - gnome-bluetooth 
-    # - bluez-cups 
-    # - bluez
-    # - gammastep 
-    # - mate-polkit 
-    # - translate-shell
-    # - coreutils 
-    # - wl-clipboard 
-    # - xdg-utils 
-    # - rsync 
-    # - ripgrep 
-    # - gojq 
-    # - npm 
-    # - meson 
-    # - typescript 
-    # - gjs 
-    # - axel 
-    # - brightnessctl 
-    # - ddcutil
-    # - pavucontrol 
-    # - wireplumber 
-    # - libdbusmenu-gtk3-devel 
-    # - libdbusmenu 
-    # - playerctl 
-    # - swww 
-    # - cava
-    # - yad
-    # - scdoc
-    # - ydotool
-    # - tinyxml
-    # - tinyxml2
-    # - tinyxml2-devel
-    # - file-devel
-    # - libwebp-devel 
-    # - libdrm-devel 
-    # - libgbm-devel 
-    # - pam-devel 
-    # - libsass-devel 
-    # - libsass
-    # - gnome-themes-extra 
-    # - adw-gtk3-theme 
-    # - qt5ct 
-    # - qt6ct 
-    # - qt6-qtwayland 
-    # - kcmshell6 
-    # - qt5-qtwayland 
-    # - fontconfig 
-    # - jetbrains-mono-fonts 
-    # - gdouros-symbola-fonts 
-    # - lato-fonts 
-    # - darkly 
-    # - kitty 
-    # - starship
-    # - aylurs-gtk-shell
-    # - kvantum 
-    # - kvantum-qt5
-    # - libxdp-devel 
-    # - libxdp 
-    # - libportal
-    
-  
-    - quickshell
-    - udis86
-    - mesa-libGL-devel
-    - mesa-libGLES-devel
-    - rofi-wayland
-    - fuzzel
-    # ── Compositor & core ───────────────────────────────────────────────
-    - hyprland                       # stable Hyprland Wayland compositor
-    - hyprland-plugins               # official plugin suite for stable Hyprland
+modules:
+  - type: dnf
+    repos:
+      copr:
+        - lionheartp/Hyprland
+    install:
+      packages:
+        # Hyprland Compositor & Essential Ecosystem
+        - hyprland
+        - xdg-desktop-portal-hyprland
+        - hyprpolkitagent
+        - uwsm
+        - hyprpaper
+        - hyprlock
+        - hypridle
+        - hyprsunset
+        - noctalia-hyprland-meta
 
-    # ── Session helpers & auth ────────────────────────────────────────
-    - xdg-desktop-portal-hyprland    # portal backend for file dialogs, screenshots
-    - hyprpolkitagent                # Polkit auth agent integration
-    # - gnome-keyring                  # secret storage (for portals, network login)
+        # Hyprland Headers and Subsystem Development Libraries
+        - hyprland-devel
+        - aquamarine-devel
+        - hyprutils-devel
+        - hyprlang-devel
+        - hyprcursor-devel
+        - hyprgraphics-devel
+        - hyprwire-devel
+        - hyprland-protocols-devel
 
-    # ── Window management extras ───────────────────────────────────────
-    - hyprland-autoname-workspaces   # auto‑renames workspaces based on apps
-    - hyprdim                        # dim inactive windows for focus indication
+        # Graphics / EGL / GLES3 & Shader Compilers
+        - libglvnd-devel
+        - mesa-libEGL-devel
+        - mesa-libGL-devel
+        - mesa-libgbm-devel
+        - glslang-devel
 
-    # ── Lockscreen & idle ─────────────────────────────────────────────
-    - hyprlock                       # GPU‑accelerated screen locker
-    - hypridle                       # idle daemon (e.g. DPMS, screen blanking)
+        # Wayland, Input, & Window Management
+        - wayland-devel
+        - wayland-protocols-devel
+        - libxkbcommon-devel
+        - libinput-devel
+        - libdrm-devel
+        - pixman-devel
+        - cairo-devel
+        - pango-devel
+        - libXcursor-devel
+        - libxcb-devel
+        - xcb-util-devel
+        - xcb-util-wm-devel
+        - xcb-util-renderutil-devel
+        - xcb-util-errors-devel
+        - libseat-devel
+        - libdisplay-info-devel
+        - libliftoff-devel
+        - libeis-devel
 
-    # ── Wallpaper tool ─────────────────────────────────────────────────
-    - hyprpaper                      # IPC‑controlled wallpaper daemon
+        # Math, Parsing, and Utilities
+        - re2-devel
+        - muParser-devel
+        - lcms2-devel
+        - libuuid-devel
+        - tomlplusplus-devel
+        - glaze-devel
+        - sdbus-cpp-devel
+        - lua-devel
 
-    # ── Panel & status bar ────────────────────────────────────────────
-    - hyprpanel                      # customizable Hyprland panel/bar
-    - waybar
-    
-    # ── Notifications & clipboard ─────────────────────────────────────
-    - dunst                          # lightweight notification daemon
-    - cliphist                       # Wayland clipboard manager
-    - nwg-clipman                    # GTK3 GUI for cliphist
+        # Build Tooling
+        - gcc
+        - gcc-c++
+        - cmake
+        - meson
+        - cpio
+        - git-core
 
-    # ── Utilities ─────────────────────────────────────────────────────
-    - hyprshot                       # screenshot utility with mouse selection
-    - hyprpicker                     # Wayland color picker tool
-    - hyprsysteminfo                 # system info display for overlays/status
-    - hyprnome                       # gnome like workspace switching
-    - hyprsunset                     # blue light filter
-
-    # ── Essentials ────────────────────────────────────────────────────
-    - pavucontrol                    # graphical PulseAudio volume control
+  # Declarative Hyprland Plugins built during image assembly
+  - type: hyprland-plugins
+    source: local
+    destination: /usr/lib64/hyprland/plugins
+    plugins:
+      - url: https://github.com/hyprnux/hyprglass

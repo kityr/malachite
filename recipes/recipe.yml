@@ -12,11 +12,15 @@ modules:
   # - type: akmods
   #   install: []
   #   nvidia-driver: nvidia
-    
+
   - type: files
     files:
       - source: system
         destination: / # copies files/system/* into root
+
+  # Hyprland Desktop Environment, Headers & Plugins sub-recipe
+  - from-file: hyprland.yml
+
   - type: dnf
     repos:
       files:
@@ -33,70 +37,9 @@ modules:
         - sneexy/zen-browser
         - ronnypfannschmidt/howdy-beta
         - imput/helium
-        - lionheartp/Hyprland
         # - bieszczaders/kernel-cachyos
     install:
       packages:
-        # HYPRLAND THINGS
-        # Hyprland headers and subsystem development packages
-        - hyprland-devel
-        - aquamarine-devel
-        - hyprutils-devel
-        - hyprlang-devel
-        - hyprcursor-devel
-        - hyprgraphics-devel
-        - hyprwire-devel
-        - hyprland-protocols-devel
-        
-        # Graphics / EGL / GLES3 & Shaders (required for hyprpm / plugin compilation)
-        - libglvnd-devel
-        - mesa-libEGL-devel
-        - mesa-libGL-devel
-        - mesa-libgbm-devel
-        - glslang-devel
-        
-        # Wayland, Input, & Window Management
-        - wayland-devel
-        - wayland-protocols-devel
-        - libxkbcommon-devel
-        - libinput-devel
-        - libdrm-devel
-        - pixman-devel
-        - cairo-devel
-        - pango-devel
-        - libXcursor-devel
-        - libxcb-devel
-        - xcb-util-devel
-        - xcb-util-wm-devel
-        - xcb-util-renderutil-devel
-        - xcb-util-errors-devel
-        - libseat-devel
-        - libdisplay-info-devel
-        - libliftoff-devel
-        - libeis-devel
-        
-        # Math, parsing, and utilities
-        - re2-devel
-        - muParser-devel
-        - lcms2-devel
-        - libuuid-devel
-        - tomlplusplus-devel
-        - glaze-devel
-        - sdbus-cpp-devel
-        - lua-devel
-        
-        # Build tools
-        - cpio
-        - hyprland
-        - xdg-desktop-portal-hyprland
-        - hyprpolkitagent
-        - uwsm
-        - hyprpaper
-        - hyprlock
-        - hypridle
-        - hyprsunset
-        - noctalia-hyprland-meta
-        # ---------------------------------
         - clash-meta
         # - sing-box
         # - throne
@@ -147,10 +90,6 @@ modules:
         - poppler
         - fd-find
         - yazi
-        - cmake
-        - meson
-        - gcc-c++
-        - gcc
         - igt-gpu-tools
         - vkmark
         - vulkan-tools
