@@ -76,6 +76,8 @@ modules:
         - cpio
         - git-core
 
+        - quickshell
+
   # Declarative Hyprland Plugins built during image assembly
   - type: hyprland-plugins
     source: local
