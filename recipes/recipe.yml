@@ -37,9 +37,11 @@ modules:
         - sneexy/zen-browser
         - ronnypfannschmidt/howdy-beta
         - imput/helium
+        - quadratech188/vicinae
         # - bieszczaders/kernel-cachyos
     install:
       packages:
+        - vicinae
         - clash-meta
         # - sing-box
         # - throne
