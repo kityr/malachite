@@ -85,3 +85,4 @@ modules:
     plugins:
       - url: https://github.com/hyprnux/hyprglass
       - url: https://github.com/fedsfarm/gloview
+      - url: https://github.com/yayuuu/hyprland-scroll-overview
