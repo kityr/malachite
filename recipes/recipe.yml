@@ -19,7 +19,7 @@ modules:
         destination: / # copies files/system/* into root
 
   # Hyprland Desktop Environment, Headers & Plugins sub-recipe
-  - from-file: hyprland.yml
+  # - from-file: hyprland.yml
 
   - type: dnf
     repos:
