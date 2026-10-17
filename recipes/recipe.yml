@@ -42,7 +42,7 @@ modules:
     install:
       packages:
         - perf
-        - vicinae
+        # - vicinae
         - clash-meta
         # - sing-box
         # - throne
